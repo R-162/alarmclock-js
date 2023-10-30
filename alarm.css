@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgb(240, 237, 237);
+  background-image: url("img/ac.png");
+  background-position: center;
+}
+
+
+.alarm{
+  border: 3px solid #c02722;
+  border-radius: 8px;
+}
+
+.datetime{
+  color: #fff;
+  background: rgb(14, 7, 0);
+  align-content: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  
+  font-family: "Segoe UI", sans-serif;
+  width: 340px;
+  padding: 15px 10px;
+  transition: 0.5s;
+  transition-property: background,box-shadow;
+}
+
+.date{
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+  color:  orangered;
+}
+
+.time{
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child){
+  position: relative;
+  max-width: 0 6px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.time span:last-child{
+  background: #13e00c;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 50px;
+}
+
+ac{
+  border: 1px solid #a80b0b;
+  margin: auto;
+}
+
+.setAlarm{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin: 1ex;
+}
+
+.column select{
+  background: #10101E;
+  color: #fff;
+  text-align: center;
+  padding: 8px 4px;
+  border: 1px solid #db111b;
+  border-radius: 10px;
+  margin: 1ex;
+}
+
+
+#settingAlarm, .clk-delete, #stopAlarm{
+  padding: 5px;
+  color: #0e0101;
+  background: #e32e2e83;
+  border: 1px solid #4f9c8b;
+  border-radius: 18px;
+  text-align: center;
+}
+
+#stopAlarm{
+  visibility: hidden;
+  width: 100px;
+  margin: 0 34%;
+  color: wheat;
+}
+
+.clk-delete{
+  margin-left: 100px;
+}
+
+#settingAlarm:hover, .clk-delete:hover {
+  cursor: pointer;
+  background: #e7e40c;
+  box-shadow: 0 0 30px #64b7f7;
+}
+#stopAlarm:hover {
+  cursor: pointer;
+  background: #dd590c;
+  box-shadow: 0 0 30px #e46f0f;
+
+}
+
+#ala{
+  color: #8a0909;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.alarmList{
+  color: #005a08;
+  margin: 14px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.alarmLog{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  margin: 6px auto;
+}
+.seconds{
+  font-size: 20px;
+  color: #13e00c;
+}
